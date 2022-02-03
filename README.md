@@ -1,5 +1,5 @@
 # assignment_template
-Minimalistic \LaTeX template designed for assignments. Checkout *main.pdf* for a preview.
+Minimalistic LaTeX template designed for assignments. Checkout *main.pdf* for a preview.
 
 ## Description
 
