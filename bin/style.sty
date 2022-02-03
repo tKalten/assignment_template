@@ -1,0 +1,72 @@
+%\usepackage{minted}
+\usepackage{lipsum}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{amsmath, amssymb, amscd, amsthm, amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[backend=biber,style=apa,sortcites=true,sorting=ynt]{biblatex}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage[justification=justified,singlelinecheck=false]{caption}
+\usepackage{tabularx}
+\usepackage{cleveref}
+\usepackage{titlesec}
+\usepackage[ddmmyyyy]{datetime}
+
+%margins
+\oddsidemargin 0pt
+\evensidemargin 0pt
+\marginparwidth 40pt
+\marginparsep 10pt
+\topmargin -20pt
+\headsep 20pt
+\textheight 8.7in
+\textwidth 6.65in
+\linespread{1.2}
+\graphicspath{{figures/}}
+\captionsetup[table]{skip=2pt}
+
+\renewcommand{\dateseparator}{.}
+
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+%shortcuts
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\al}{\alpha}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\aff}{aff}
+
+
+% commands to create title
+\renewcommand{\maketitle}{
+    \hbadness=10000
+    \noindent \@course \hfill \@author
+
+    \noindent{\large \@institution} \hfill \@matnum
+    \vspace{20pt}
+
+    \noindent{\Huge\textbf{\@title}} \hfill \@date
+    \vspace{-6pt}
+
+    \noindent\rule{\textwidth}{1pt}
+    \hbadness=1000
+    \vspace{-20pt}
+}
+
+\newcommand\matnum[1]{\renewcommand\@matnum{#1}}
+\newcommand\@matnum{}
+
+\newcommand\course[1]{\renewcommand\@course{#1}}
+\newcommand\@course{}
+
+\newcommand\institution[1]{\renewcommand\@institution{#1}}
+\newcommand\@institution{}
+
+
+
